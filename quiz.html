@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>David Miller | Quizmaster</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="the_wrapper">
+    <header id="theheader">
+        <a href="index.html" id="logo">
+            <h1>Dave Miller</h1>
+            <h2>Developer</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="the_content">
+        <strong id="quiz_question"></strong>
+        <div id="answers_div">
+            <div class="answer_div"><span class='quiz_answer' id="quiz_answer0"></span></div>
+            <div class="answer_div"><span class='quiz_answer' id="quiz_answer1"></span></div>
+            <div class="answer_div"><span class='quiz_answer' id="quiz_answer2"></span></div>
+            <div class="answer_div"><span class='quiz_answer' id="quiz_answer3"></span></div>
+            <div class="answer_div"><span class='quiz_answer' id="quiz_answer4"></span></div>
+        </div>
+
+        <button id="proceed_to_next_question" type="button"> Next Question </button>
+
+        <div id="score_keeper_div">
+            <label for="score_keeper" id="quiz_score_tracker">Quiz Score: </label><input type="text" size="5" id="score_keeper" value="0/0" disabled>
+        </div>
+    </section>
+
+    <footer id="the_footer"> <!--information that we want to display on every page-->
+        <p>&copy; 2014 David Miller </p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</div>
+</body>
+</html>

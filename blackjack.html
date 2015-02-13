@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+</head>
+<body>
+<header>
+    <a href="index.html" id="logo">
+        <h1>Dave Miller</h1>
+        <h2>Developer</h2>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="blackjack_wrapper">
+<div id="dealer_div">
+
+    <label for="dealer_score" class="dealer_identity">Dealer:</label>
+
+    <input type="text" id="dealer_score" class="dealer_identity" size="4" disabled>
+    <button type="button" id="start_button">Start Deal</button><br>
+    <div id="dealer_card_images"> <!-- card images will be added to this via JS -->
+    </div>
+
+</div>
+
+<div id="player_div">
+
+    <label for="user_score">Player:</label>
+    <input type="text" id="user_score" size="4" disabled>
+
+    <label for="user_result">Result:</label>
+    <input type="text" id="user_result" size="8" disabled>
+
+    <button type="button" id="one_more_hand_button">Play Again</button><br>
+
+
+    <div id="player_card_images"> <!-- card images will be added to this via JS -->
+    </div><br>
+
+
+    <div id="betting_div">
+        <label for="wager_amt">Wager: </label>
+        <input type="text" id="wager_amt" size="6" value="1">
+        <label for="chip_count">Total Chips</label>
+        <input type="text" id="chip_count" size = "6" disabled>
+    </div><br>
+
+    <div id="action_buttons_container">
+    <button type="button" id="stand_button" class="action_buttons">Stand</button>
+    <button type="button" id="hit_button" class="action_buttons">Hit Me</button>
+    <button type="button" id="double_down_button" class="action_buttons">Double-Down</button>
+    </div>
+
+</div>
+</div>
+<script src="js/blackjack.js"></script>
+
+</body>
+</html>

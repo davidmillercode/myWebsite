@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <h1>Dave Miller</h1>
+            <h2>Developer</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="stopwatch_container">
+        <div id="hours" class="time_box">00</div><div class="divider">:</div>
+        <div id="minutes" class="time_box">00</div><div class="divider">:</div>
+        <div id="seconds" class="time_box">00</div><div class="divider">:</div>
+        <div id="centiseconds" class="time_box">00</div><br>
+
+        <button id="start_pause" class="stopwatch_button">Start</button>
+        <button id="lap_reset" class="stopwatch_button" disabled>Reset</button>
+    </div>
+
+    <script src="js/stopwatch.js"></script>
+</body>
+</html>
